@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../ip/axi_ram/sim/axi_ram.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

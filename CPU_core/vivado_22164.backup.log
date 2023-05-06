@@ -1,0 +1,1285 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Oct 30 21:07:58 2022
+# Process ID: 22164
+# Current directory: D:/data/COAlab/CPU_core
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24232 D:\data\COAlab\CPU_core\MiniMIPS32.xpr
+# Log file: D:/data/COAlab/CPU_core/vivado.log
+# Journal file: D:/data/COAlab/CPU_core\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/data/COAlab/CPU_core/MiniMIPS32.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MiniMIPS32_SYS_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/data_ram.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_data.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'd:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MiniMIPS32_SYS_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7610dcaffef24b1f98084704173e9f72 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MiniMIPS32_SYS_tb_behav xil_defaultlib.MiniMIPS32_SYS_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:189]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'mem_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:198]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:201]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre_i' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:208]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MiniMIPS32_SYS_tb_behav -key {Behavioral:sim_1:Functional:MiniMIPS32_SYS_tb} -tclbatch {MiniMIPS32_SYS_tb.tcl} -view {D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/MiniMIPS32_SYS_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/MiniMIPS32_SYS_tb_behav.wcfg
+source MiniMIPS32_SYS_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1ms
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.inst_rom0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.data_ram0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MiniMIPS32_SYS_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1ms
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 828.020 ; gain = 63.770
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MiniMIPS32_SYS_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/data_ram.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_data.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'd:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MiniMIPS32_SYS_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7610dcaffef24b1f98084704173e9f72 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MiniMIPS32_SYS_tb_behav xil_defaultlib.MiniMIPS32_SYS_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:189]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'mem_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:198]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:201]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre_i' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:208]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.inst_rom0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.data_ram0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 842.059 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+save_wave_config {D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/MiniMIPS32_SYS_tb_behav.wcfg}
+save_wave_config {D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/MiniMIPS32_SYS_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MiniMIPS32_SYS_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/data_ram.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_data.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'd:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MiniMIPS32_SYS_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/data_ram_1/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/inst_rom_1/sim/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32_SYS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exe_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exemem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exemem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/hilo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/id_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/idexe_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module idexe_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/if_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/ifid_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ifid_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/mem_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_stage
+ERROR: [VRFC 10-2068] ansi port mem_whi_o cannot be redeclared in the header [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/mem_stage.v:28]
+INFO: [VRFC 10-2458] undeclared symbol mem_wlo_o, assumed default net type wire [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/mem_stage.v:48]
+ERROR: [VRFC 10-2865] module 'mem_stage' ignored due to previous errors [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/mem_stage.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MiniMIPS32_SYS_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/data_ram.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_data.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'd:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MiniMIPS32_SYS_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/data_ram_1/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/inst_rom_1/sim/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32_SYS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exe_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exemem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exemem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/hilo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/id_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/idexe_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module idexe_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/if_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/ifid_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ifid_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/mem_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/memwb_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memwb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/wb_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sim_1/new/MiniMIPS32_SYS_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7610dcaffef24b1f98084704173e9f72 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MiniMIPS32_SYS_tb_behav xil_defaultlib.MiniMIPS32_SYS_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3633] port 'wb_wlo_i' is already connected [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:232]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:212]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'mem_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:222]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:226]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre_i' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:234]
+ERROR: [VRFC 10-3633] port 'wb_wlo_i' is already connected [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:241]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MiniMIPS32_SYS_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/data_ram.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_data.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'd:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MiniMIPS32_SYS_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/data_ram_1/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/inst_rom_1/sim/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32_SYS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exe_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exemem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exemem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/hilo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/id_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/idexe_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module idexe_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/if_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/ifid_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ifid_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/mem_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/memwb_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memwb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/wb_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sim_1/new/MiniMIPS32_SYS_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7610dcaffef24b1f98084704173e9f72 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MiniMIPS32_SYS_tb_behav xil_defaultlib.MiniMIPS32_SYS_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:212]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'mem_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:222]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:226]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre_i' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:234]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.if_stage
+Compiling module xil_defaultlib.ifid_reg
+Compiling module xil_defaultlib.id_stage
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.idexe_reg
+Compiling module xil_defaultlib.exe_stage
+Compiling module xil_defaultlib.exemem_reg
+Compiling module xil_defaultlib.mem_stage
+Compiling module xil_defaultlib.memwb_reg
+Compiling module xil_defaultlib.wb_stage
+Compiling module xil_defaultlib.hilo
+Compiling module xil_defaultlib.MiniMIPS32
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.MiniMIPS32_SYS
+Compiling module xil_defaultlib.MiniMIPS32_SYS_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MiniMIPS32_SYS_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MiniMIPS32_SYS_tb_behav -key {Behavioral:sim_1:Functional:MiniMIPS32_SYS_tb} -tclbatch {MiniMIPS32_SYS_tb.tcl} -view {D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/MiniMIPS32_SYS_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/MiniMIPS32_SYS_tb_behav.wcfg
+source MiniMIPS32_SYS_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1ms
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.inst_rom0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.data_ram0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MiniMIPS32_SYS_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1ms
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 856.547 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MiniMIPS32_SYS_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/data_ram.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_data.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'd:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MiniMIPS32_SYS_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/data_ram_1/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/inst_rom_1/sim/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32_SYS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exe_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exemem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exemem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/hilo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/id_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/idexe_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module idexe_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/if_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/ifid_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ifid_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/mem_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/memwb_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memwb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/wb_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sim_1/new/MiniMIPS32_SYS_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7610dcaffef24b1f98084704173e9f72 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MiniMIPS32_SYS_tb_behav xil_defaultlib.MiniMIPS32_SYS_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:212]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'mem_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:222]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:226]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre_i' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:234]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.if_stage
+Compiling module xil_defaultlib.ifid_reg
+Compiling module xil_defaultlib.id_stage
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.idexe_reg
+Compiling module xil_defaultlib.exe_stage
+Compiling module xil_defaultlib.exemem_reg
+Compiling module xil_defaultlib.mem_stage
+Compiling module xil_defaultlib.memwb_reg
+Compiling module xil_defaultlib.wb_stage
+Compiling module xil_defaultlib.hilo
+Compiling module xil_defaultlib.MiniMIPS32
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.MiniMIPS32_SYS
+Compiling module xil_defaultlib.MiniMIPS32_SYS_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MiniMIPS32_SYS_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MiniMIPS32_SYS_tb_behav -key {Behavioral:sim_1:Functional:MiniMIPS32_SYS_tb} -tclbatch {MiniMIPS32_SYS_tb.tcl} -view {D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/MiniMIPS32_SYS_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/MiniMIPS32_SYS_tb_behav.wcfg
+source MiniMIPS32_SYS_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1ms
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.inst_rom0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.data_ram0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MiniMIPS32_SYS_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1ms
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 864.523 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MiniMIPS32_SYS_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/data_ram.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_data.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'd:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MiniMIPS32_SYS_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/data_ram_1/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/inst_rom_1/sim/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32_SYS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exe_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exemem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exemem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/hilo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/id_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/idexe_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module idexe_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/if_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/ifid_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ifid_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/mem_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/memwb_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memwb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/wb_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sim_1/new/MiniMIPS32_SYS_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7610dcaffef24b1f98084704173e9f72 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MiniMIPS32_SYS_tb_behav xil_defaultlib.MiniMIPS32_SYS_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:212]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'mem_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:222]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:226]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre_i' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:234]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.if_stage
+Compiling module xil_defaultlib.ifid_reg
+Compiling module xil_defaultlib.id_stage
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.idexe_reg
+Compiling module xil_defaultlib.exe_stage
+Compiling module xil_defaultlib.exemem_reg
+Compiling module xil_defaultlib.mem_stage
+Compiling module xil_defaultlib.memwb_reg
+Compiling module xil_defaultlib.wb_stage
+Compiling module xil_defaultlib.hilo
+Compiling module xil_defaultlib.MiniMIPS32
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.MiniMIPS32_SYS
+Compiling module xil_defaultlib.MiniMIPS32_SYS_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MiniMIPS32_SYS_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.inst_rom0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.data_ram0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 864.523 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MiniMIPS32_SYS_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/data_ram.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_data.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'd:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MiniMIPS32_SYS_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/data_ram_1/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/inst_rom_1/sim/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32_SYS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exe_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exemem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exemem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/hilo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/id_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/idexe_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module idexe_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/if_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/ifid_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ifid_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/mem_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/memwb_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memwb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/wb_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sim_1/new/MiniMIPS32_SYS_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7610dcaffef24b1f98084704173e9f72 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MiniMIPS32_SYS_tb_behav xil_defaultlib.MiniMIPS32_SYS_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:212]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'mem_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:222]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:226]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre_i' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:234]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.if_stage
+Compiling module xil_defaultlib.ifid_reg
+Compiling module xil_defaultlib.id_stage
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.idexe_reg
+Compiling module xil_defaultlib.exe_stage
+Compiling module xil_defaultlib.exemem_reg
+Compiling module xil_defaultlib.mem_stage
+Compiling module xil_defaultlib.memwb_reg
+Compiling module xil_defaultlib.wb_stage
+Compiling module xil_defaultlib.hilo
+Compiling module xil_defaultlib.MiniMIPS32
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.MiniMIPS32_SYS
+Compiling module xil_defaultlib.MiniMIPS32_SYS_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MiniMIPS32_SYS_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.inst_rom0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.data_ram0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 864.523 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MiniMIPS32_SYS_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/data_ram.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_data.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'd:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MiniMIPS32_SYS_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/data_ram_1/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/inst_rom_1/sim/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32_SYS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exe_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exemem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exemem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/hilo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/id_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/idexe_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module idexe_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/if_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/ifid_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ifid_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/mem_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/memwb_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memwb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/wb_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sim_1/new/MiniMIPS32_SYS_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7610dcaffef24b1f98084704173e9f72 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MiniMIPS32_SYS_tb_behav xil_defaultlib.MiniMIPS32_SYS_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:212]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'mem_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:222]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:226]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre_i' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:234]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.if_stage
+Compiling module xil_defaultlib.ifid_reg
+Compiling module xil_defaultlib.id_stage
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.idexe_reg
+Compiling module xil_defaultlib.exe_stage
+Compiling module xil_defaultlib.exemem_reg
+Compiling module xil_defaultlib.mem_stage
+Compiling module xil_defaultlib.memwb_reg
+Compiling module xil_defaultlib.wb_stage
+Compiling module xil_defaultlib.hilo
+Compiling module xil_defaultlib.MiniMIPS32
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.MiniMIPS32_SYS
+Compiling module xil_defaultlib.MiniMIPS32_SYS_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MiniMIPS32_SYS_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.inst_rom0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.data_ram0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 864.523 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MiniMIPS32_SYS_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/data_ram.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_data.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'd:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MiniMIPS32_SYS_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/data_ram_1/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/inst_rom_1/sim/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32_SYS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exe_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exemem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exemem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/hilo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/id_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/idexe_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module idexe_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/if_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/ifid_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ifid_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/mem_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/memwb_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memwb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/wb_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sim_1/new/MiniMIPS32_SYS_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7610dcaffef24b1f98084704173e9f72 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MiniMIPS32_SYS_tb_behav xil_defaultlib.MiniMIPS32_SYS_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:212]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'mem_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:222]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:226]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre_i' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:234]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.if_stage
+Compiling module xil_defaultlib.ifid_reg
+Compiling module xil_defaultlib.id_stage
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.idexe_reg
+Compiling module xil_defaultlib.exe_stage
+Compiling module xil_defaultlib.exemem_reg
+Compiling module xil_defaultlib.mem_stage
+Compiling module xil_defaultlib.memwb_reg
+Compiling module xil_defaultlib.wb_stage
+Compiling module xil_defaultlib.hilo
+Compiling module xil_defaultlib.MiniMIPS32
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.MiniMIPS32_SYS
+Compiling module xil_defaultlib.MiniMIPS32_SYS_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MiniMIPS32_SYS_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.inst_rom0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.data_ram0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 864.523 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MiniMIPS32_SYS_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/data_ram.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_data.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'd:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MiniMIPS32_SYS_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/data_ram_1/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/inst_rom_1/sim/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32_SYS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exe_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exemem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exemem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/hilo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/id_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/idexe_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module idexe_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/if_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/ifid_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ifid_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/mem_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/memwb_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memwb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/wb_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sim_1/new/MiniMIPS32_SYS_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7610dcaffef24b1f98084704173e9f72 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MiniMIPS32_SYS_tb_behav xil_defaultlib.MiniMIPS32_SYS_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:212]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'mem_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:222]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:226]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre_i' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:234]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.if_stage
+Compiling module xil_defaultlib.ifid_reg
+Compiling module xil_defaultlib.id_stage
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.idexe_reg
+Compiling module xil_defaultlib.exe_stage
+Compiling module xil_defaultlib.exemem_reg
+Compiling module xil_defaultlib.mem_stage
+Compiling module xil_defaultlib.memwb_reg
+Compiling module xil_defaultlib.wb_stage
+Compiling module xil_defaultlib.hilo
+Compiling module xil_defaultlib.MiniMIPS32
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.MiniMIPS32_SYS
+Compiling module xil_defaultlib.MiniMIPS32_SYS_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MiniMIPS32_SYS_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.inst_rom0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.data_ram0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 864.523 ; gain = 0.000
+current_wave_config {MiniMIPS32_SYS_tb_behav.wcfg}
+MiniMIPS32_SYS_tb_behav.wcfg
+add_wave {{/MiniMIPS32_SYS_tb/SoC/minimips32/hilo0}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'MiniMIPS32_SYS_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/data_ram.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/mov_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/arith_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/logic_op_data.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_inst.coe'
+INFO: [SIM-utils-43] Exported 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim/shift_data.coe'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'd:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MiniMIPS32_SYS_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/data_ram_1/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/inst_rom_1/sim/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ip/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32_SYS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exe_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/exemem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exemem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/hilo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/id_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/idexe_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module idexe_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/if_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/ifid_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ifid_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/mem_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/memwb_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memwb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/wb_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sim_1/new/MiniMIPS32_SYS_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7610dcaffef24b1f98084704173e9f72 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot MiniMIPS32_SYS_tb_behav xil_defaultlib.MiniMIPS32_SYS_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:212]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'mem_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:222]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:226]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'wb_dre_i' [D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:234]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.if_stage
+Compiling module xil_defaultlib.ifid_reg
+Compiling module xil_defaultlib.id_stage
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.idexe_reg
+Compiling module xil_defaultlib.exe_stage
+Compiling module xil_defaultlib.exemem_reg
+Compiling module xil_defaultlib.mem_stage
+Compiling module xil_defaultlib.memwb_reg
+Compiling module xil_defaultlib.wb_stage
+Compiling module xil_defaultlib.hilo
+Compiling module xil_defaultlib.MiniMIPS32
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="kin...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.MiniMIPS32_SYS
+Compiling module xil_defaultlib.MiniMIPS32_SYS_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MiniMIPS32_SYS_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.inst_rom0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module MiniMIPS32_SYS_tb.SoC.data_ram0.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 866.699 ; gain = 0.000
+save_wave_config {D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/MiniMIPS32_SYS_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 30 22:29:50 2022...

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Dec 12 20:32:56 2022
+# Process ID: 20104
+# Current directory: D:/data/func_test/soc_axi_func/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19772 D:\data\func_test\soc_axi_func\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: D:/data/func_test/soc_axi_func/run_vivado/mycpu_prj1/vivado.log
+# Journal file: D:/data/func_test/soc_axi_func/run_vivado/mycpu_prj1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/data/func_test/soc_axi_func/run_vivado/mycpu_prj1/mycpu.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+add_files -fileset utils_1 -norecurse D:/data/func_test/soc_axi_func/run_vivado/mycpu_prj1/name.tcl
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE [ get_files D:/data/func_test/soc_axi_func/run_vivado/mycpu_prj1/name.tcl -of [get_fileset utils_1] ] [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

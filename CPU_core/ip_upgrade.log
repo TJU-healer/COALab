@@ -1,0 +1,16 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Oct 13 20:11:32 2022
+| Host         : PC-20220730QAXS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k70tfbv676-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clkdiv'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of clkdiv (xilinx.com:ip:clk_wiz:6.0) from (Rev. 4) to (Rev. 2)
+

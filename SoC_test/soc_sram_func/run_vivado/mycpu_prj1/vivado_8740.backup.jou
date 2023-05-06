@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec 13 21:21:59 2022
+# Process ID: 8740
+# Current directory: D:/data/func_test/soc_sram_func/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5428 D:\data\func_test\soc_sram_func\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: D:/data/func_test/soc_sram_func/run_vivado/mycpu_prj1/vivado.log
+# Journal file: D:/data/func_test/soc_sram_func/run_vivado/mycpu_prj1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/data/func_test/soc_sram_func/run_vivado/mycpu_prj1/mycpu.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/data/func_test/soc_sram_func/run_vivado/mycpu_prj1/test.wcfg
+source soc_lite_top.tcl
+update_compile_order -fileset sim_1
+set_property top soc_lite_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property -name {xsim.simulate.runtime} -value {1ms} -objects [get_filesets sim_1]
+relaunch_sim
+update_compile_order -fileset sim_1
+close_sim

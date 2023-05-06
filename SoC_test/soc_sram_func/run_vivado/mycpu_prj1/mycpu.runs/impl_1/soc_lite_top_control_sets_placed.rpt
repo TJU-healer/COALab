@@ -1,0 +1,148 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Dec 14 16:17:20 2022
+| Host         : JY running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file soc_lite_top_control_sets_placed.rpt
+| Design       : soc_lite_top
+| Device       : xc7k325t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    70 |
+|    Minimum number of control sets                        |    70 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    52 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    70 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    65 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             144 |           29 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             238 |          117 |
+| Yes          | No                    | No                     |             150 |           55 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            2208 |          908 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+--------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+|         Clock Signal        |                      Enable Signal                     |                   Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++-----------------------------+--------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/ena                       |                                                      |                1 |              4 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cause[0]                  | cpu/MiniMIPS32_0/regfile0/SR[0]                      |                2 |              5 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exe_stage0/cnt[5]_i_1_n_0             |                                                      |                3 |              5 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep[0]     | cpu/MiniMIPS32_0/regfile0/SR[0]                      |                2 |              8 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep__3_0   |                                                      |                5 |             13 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/cause[0]                   | cpu/MiniMIPS32_0/regfile0/SR[0]                      |                8 |             19 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/p_1_in[0]                  | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               15 |             31 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep__0_1   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep__0_0 |               13 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wa_reg[2]_2[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               20 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_0[0]           | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               19 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wa_reg[2]_5[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               27 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/cp0_reg0/count                        | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               11 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/cpu_resetn_reg_rep__2_0[0] | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               13 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep_7[0]   | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               12 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_14[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               11 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep_5[0]   | cpu/MiniMIPS32_0/regfile0/SR[0]                      |                9 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep_9[0]   | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               14 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep_10[0]  | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               10 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep_3[0]   | cpu/MiniMIPS32_0/regfile0/SR[0]                      |                8 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wa_reg[2]_1[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               17 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep_11[0]  |                                                      |                5 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep_0[0]   | cpu/MiniMIPS32_0/regfile0/SR[0]                      |                6 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep_8[0]   | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               11 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep_1[0]   | cpu/MiniMIPS32_0/regfile0/SR[0]                      |                7 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep_6[0]   | cpu/MiniMIPS32_0/regfile0/SR[0]                      |                4 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep__0[0]  | cpu/MiniMIPS32_0/if_stage0/p_0_in                    |               22 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep_4[0]   | cpu/MiniMIPS32_0/regfile0/SR[0]                      |                7 |             32 |
+|  pll.clk_pll/inst/timer_clk |                                                        | cpu/MiniMIPS32_0/regfile0/SR[0]                      |                8 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exe_stage0/temp_op2                   |                                                      |                8 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_cp0_we_reg_0[0]         | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               14 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/idexe_reg0/exe_src1_reg[31]_1[1]      |                                                      |               19 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/idexe_reg0/exe_src1_reg[31]_1[0]      |                                                      |               14 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/E[0]                       | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               10 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/cpu_resetn_reg_rep__1[0]   | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               25 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/status_reg[1]_2[0]         | cpu/MiniMIPS32_0/regfile0/SR[0]                      |                9 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_11[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               12 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_17[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               18 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_7[0]           | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               11 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_6[0]           | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               12 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_16[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               14 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_8[0]           | cpu/MiniMIPS32_0/regfile0/SR[0]                      |                9 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wa_reg[2]_4[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               14 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_12[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               12 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_3[0]           | cpu/MiniMIPS32_0/regfile0/SR[0]                      |                8 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wa_reg[2]_3[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               12 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_9[0]           | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               10 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wa_reg[4]_0[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               11 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_10[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               10 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wa_reg[2]_0[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               14 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wa_reg[3]_0[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               10 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wa_reg[0]_0[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               11 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_1[0]           | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               24 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wa_reg[1]_0[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |                8 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wa_reg[1]_2[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |                8 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_2[0]           | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               11 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_15[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               15 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_4[0]           | cpu/MiniMIPS32_0/regfile0/SR[0]                      |                9 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wa_reg[1]_1[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               11 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wa_reg[4]_1[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               15 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_13[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               10 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_wreg_reg_5[0]           | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               13 |             32 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exemem_reg0/cpu_resetn_reg_rep_2[0]   | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               10 |             40 |
+|  pll.clk_pll/inst/cpu_clk   |                                                        | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               24 |             58 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/memwb_reg0/wb_whilo_reg_0[0]          | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               39 |             64 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/exe_stage0/divres[63]_i_1_n_0         | cpu/MiniMIPS32_0/regfile0/SR[0]                      |               18 |             65 |
+|  pll.clk_pll/inst/timer_clk |                                                        |                                                      |               11 |             67 |
+|  pll.clk_pll/inst/cpu_clk   |                                                        |                                                      |               18 |             77 |
+|  pll.clk_pll/inst/cpu_clk   |                                                        | cpu/MiniMIPS32_0/exemem_reg0/SR[0]                   |               85 |            148 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/scu0/stall[0]                         | cpu/MiniMIPS32_0/idexe_reg0/SR[0]                    |               80 |            188 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/MiniMIPS32_0/idexe_reg0/div_ready_reg[0]           | cpu/MiniMIPS32_0/exemem_reg0/mem_cp0_we_i_1_n_0      |              123 |            220 |
++-----------------------------+--------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+
+

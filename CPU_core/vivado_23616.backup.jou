@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Oct 29 20:54:35 2022
+# Process ID: 23616
+# Current directory: D:/data/COAlab/CPU_core
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22948 D:\data\COAlab\CPU_core\MiniMIPS32.xpr
+# Log file: D:/data/COAlab/CPU_core/vivado.log
+# Journal file: D:/data/COAlab/CPU_core\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/data/COAlab/CPU_core/MiniMIPS32.xpr
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Coe_File {../../../../test_coe/phase2-2_inst.coe}] [get_ips inst_rom]
+generate_target all [get_files  D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/inst_rom_1/inst_rom.xci]
+catch { config_ip_cache -export [get_ips -all inst_rom] }
+export_ip_user_files -of_objects [get_files D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/inst_rom_1/inst_rom.xci] -no_script -sync -force -quiet
+reset_run inst_rom_synth_1
+launch_runs -jobs 8 inst_rom_synth_1
+export_simulation -of_objects [get_files D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/inst_rom_1/inst_rom.xci] -directory D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/sim_scripts -ip_user_files_dir D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files -ipstatic_source_dir D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/data/COAlab/CPU_core/MiniMIPS32.cache/compile_simlib/modelsim} {questa=D:/data/COAlab/CPU_core/MiniMIPS32.cache/compile_simlib/questa} {riviera=D:/data/COAlab/CPU_core/MiniMIPS32.cache/compile_simlib/riviera} {activehdl=D:/data/COAlab/CPU_core/MiniMIPS32.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Coe_File {../../../../test_coe/phase2-2_data.coe}] [get_ips data_ram]
+generate_target all [get_files  D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/data_ram_1/data_ram.xci]
+catch { config_ip_cache -export [get_ips -all data_ram] }
+export_ip_user_files -of_objects [get_files D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/data_ram_1/data_ram.xci] -no_script -sync -force -quiet
+reset_run data_ram_synth_1
+launch_runs -jobs 8 data_ram_synth_1
+export_simulation -of_objects [get_files D:/data/COAlab/CPU_core/MiniMIPS32.srcs/sources_1/ip/data_ram_1/data_ram.xci] -directory D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/sim_scripts -ip_user_files_dir D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files -ipstatic_source_dir D:/data/COAlab/CPU_core/MiniMIPS32.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/data/COAlab/CPU_core/MiniMIPS32.cache/compile_simlib/modelsim} {questa=D:/data/COAlab/CPU_core/MiniMIPS32.cache/compile_simlib/questa} {riviera=D:/data/COAlab/CPU_core/MiniMIPS32.cache/compile_simlib/riviera} {activehdl=D:/data/COAlab/CPU_core/MiniMIPS32.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/data/COAlab/CPU_core/MiniMIPS32.sim/sim_1/behav/MiniMIPS32_SYS_tb_behav.wcfg
+source MiniMIPS32_SYS_tb.tcl
+close_sim

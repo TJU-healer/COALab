@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov 13 19:50:58 2022
+# Process ID: 12688
+# Current directory: d:/Downloads/coalab-master/CPU_core
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6820 d:\Downloads\coalab-master\CPU_core\MiniMIPS32.xpr
+# Log file: d:/Downloads/coalab-master/CPU_core/vivado.log
+# Journal file: d:/Downloads/coalab-master/CPU_core\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project d:/Downloads/coalab-master/CPU_core/MiniMIPS32.xpr
+update_compile_order -fileset sources_1
+close [ open d:/Downloads/coalab-master/CPU_core/MiniMIPS32.srcs/sources_1/new/cp0_reg.v w ]
+add_files d:/Downloads/coalab-master/CPU_core/MiniMIPS32.srcs/sources_1/new/cp0_reg.v
+update_compile_order -fileset sources_1
+close [ open d:/Downloads/coalab-master/CPU_core/MiniMIPS32.srcs/sources_1/new/scu.v w ]
+add_files d:/Downloads/coalab-master/CPU_core/MiniMIPS32.srcs/sources_1/new/scu.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

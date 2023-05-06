@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Dec 12 20:32:56 2022
+# Process ID: 20104
+# Current directory: D:/data/func_test/soc_axi_func/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19772 D:\data\func_test\soc_axi_func\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: D:/data/func_test/soc_axi_func/run_vivado/mycpu_prj1/vivado.log
+# Journal file: D:/data/func_test/soc_axi_func/run_vivado/mycpu_prj1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/data/func_test/soc_axi_func/run_vivado/mycpu_prj1/mycpu.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 949.320 ; gain = 260.895
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Dec 12 20:35:46 2022] Launched impl_1...
+Run output will be captured here: D:/data/func_test/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.334 . Memory (MB): peak = 2453.227 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1193 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2453.227 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2453.227 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2453.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 34 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 32 instances
+  SRLC32E => SRL16E: 2 instances
+
+open_run: Time (s): cpu = 00:00:38 ; elapsed = 00:00:25 . Memory (MB): peak = 2523.008 ; gain = 209.863
+open_report: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2600.152 ; gain = 29.293
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+add_files -fileset utils_1 -norecurse D:/data/func_test/soc_axi_func/run_vivado/mycpu_prj1/name.tcl
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE [ get_files D:/data/func_test/soc_axi_func/run_vivado/mycpu_prj1/name.tcl -of [get_fileset utils_1] ] [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Dec 12 20:43:54 2022] Launched impl_1...
+Run output will be captured here: D:/data/func_test/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 12 20:46:32 2022...

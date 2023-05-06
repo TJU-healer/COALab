@@ -1,0 +1,34 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../mycpu.ip_user_files/ipstatic/hdl" --include "../../../../../../rtl/xilinx_ip/clk_pll" \
+"../../../../../../rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" \
+"../../../../../../rtl/xilinx_ip/clk_pll/clk_pll.v" \
+"../../../../mycpu.ip_user_files/ip/axi_ram/sim/axi_ram.v" \
+"../../../../../../rtl/xilinx_ip/axi_crossbar_1x2/sim/axi_crossbar_1x2.v" \
+"../../../../mycpu.ip_user_files/ip/axi_clock_converter/sim/axi_clock_converter.v" \
+"../../../../../../rtl/myCPU/MiniMIPS32.v" \
+"../../../../../../rtl/axi_wrap/axi_wrap.v" \
+"../../../../../../rtl/ram_wrap/axi_wrap_ram.v" \
+"../../../../../../rtl/CONFREG/confreg.v" \
+"../../../../../../rtl/myCPU/cp0_reg.v" \
+"../../../../../../rtl/myCPU/cpu_axi_interface.v" \
+"../../../../../../rtl/myCPU/exe_stage.v" \
+"../../../../../../rtl/myCPU/exemem_reg.v" \
+"../../../../../../rtl/myCPU/hilo.v" \
+"../../../../../../rtl/myCPU/id_stage.v" \
+"../../../../../../rtl/myCPU/idexe_reg.v" \
+"../../../../../../rtl/myCPU/if_stage.v" \
+"../../../../../../rtl/myCPU/ifid_reg.v" \
+"../../../../../../rtl/myCPU/mem_stage.v" \
+"../../../../../../rtl/myCPU/memwb_reg.v" \
+"../../../../../../rtl/myCPU/mycpu.v" \
+"../../../../../../rtl/myCPU/regfile.v" \
+"../../../../../../rtl/myCPU/scu.v" \
+"../../../../../../rtl/soc_axi_lite_top.v" \
+"../../../../../../rtl/myCPU/wb_stage.v" \
+"../../../../../../testbench/mycpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

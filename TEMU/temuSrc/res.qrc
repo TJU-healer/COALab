@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon.jeg</file>
+        <file>kuaijin.png</file>
+        <file>bofang.png</file>
+        <file>kaiji.png</file>
+        <file>tuichu.png</file>
+        <file>guanji.png</file>
+        <file>b.png</file>
+    </qresource>
+</RCC>
